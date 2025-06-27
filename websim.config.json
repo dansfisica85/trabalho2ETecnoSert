@@ -1,0 +1,41 @@
+{
+  "database": {
+    "schema": {
+      "quiz_submission": {
+        "id": {
+          "type": "text",
+          "description": "Unique identifier for the submission"
+        },
+        "studentName": {
+          "type": "text",
+          "description": "Name of the student"
+        },
+        "studentNumber": {
+          "type": "text",
+          "description": "Student number"
+        },
+        "series": {
+          "type": "text",
+          "description": "Student series/class"
+        },
+        "email": {
+          "type": "text",
+          "description": "Student email, used to prevent duplicate submissions."
+        },
+        "answers": {
+          "type": "jsonb",
+          "description": "Student answers to questions"
+        },
+        "submittedAt": {
+          "type": "timestamptz",
+          "description": "Submission timestamp"
+        },
+        "questions": {
+          "type": "jsonb",
+          "description": "Questions and correct answers as presented to the user"
+        }
+      }
+    }
+  }
+}
+
